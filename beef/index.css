@@ -1,0 +1,57 @@
+.table {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    background: orange;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+  }
+  
+  .table:checked {
+    background: lightgreen;
+  }
+
+  .booth {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    background: red;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+  }
+
+  .wallvert {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    background: burlywood;
+    height: 100px;
+    width: 30px;
+    display: inline-block;
+  }
+
+  .wallhoriz {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    background: burlywood;
+    height: 30px;
+    width: 110px;
+    display: inline-block;
+  }
+
+  .empty {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    background: gray;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+  }
+  
+  .booth:checked {
+    background: green;
+  }
