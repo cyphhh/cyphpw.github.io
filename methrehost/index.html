@@ -2,8 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
-    
+    <!-- meta tags for discord, twitter and such, added by cyph -->
+        <meta property="og:title" content="methamphetamine.solutions reupload" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://cyph.pw/methrehost" />
+        <meta property="og:image" content="http://cyph.pw/methrehost/methlogo.png" />
+        <meta property="og:description" content="reupload of methamphetamine.solutions" />
+        <meta name="theme-color" content="#5c5c5c">
+    <!-- end -->
         <title>methamphetamine.solutions</title>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <audio id="music" src="msc.mp3" autoplay loop onplaying="" style="display: none;"></audio>
@@ -58,7 +64,7 @@
 
         function addStuff() {
             at("main").innerHTML =
-                `<h1 name="top"    id = "status_text" class="header animated"><a href="https://cyph.pw/meth">methamphetamine.solutions</a></h1>
+                `<h1 name="top"    id = "status_text" class="header animated"><a href="https://cyph.pw/methrehost">methamphetamine.solutions</a></h1>
             <p  name="bottom" id = "text2" class="textiboi animated">premium cheats for garry's mod, counter-strike: source, and apex legends [beta, private]</p>`;
 
             handleAnimations();
@@ -92,14 +98,7 @@
             setTimeout(() => {
                 if (!window.music.paused) {
                     addStuff();
-                    console.log("music already started");
-                    return;
-                }
-                at("status_text").innerHTML = "click to enter";
-                at("status_text").classList.add("begin");
-
-            }, 100);
-        });
+                    console.log("music finder")
 
         var temp = 0
 
