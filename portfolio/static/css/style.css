@@ -3,17 +3,28 @@ body {
 	font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
 	background-color: #101010;
 	margin: 0;
+	
 }
 
 #container {
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-  left: 50%;
-	top: 50%;
-  position: absolute;
+	margin: auto;
+  width: 50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-
+.bar {
+  background: linear-gradient(90deg, #ff4949, #ffb47c, #ffdd7c, #f9ff7c, #ffd17c, #ffc07c, #fe4e4e);
+    background-size: 1400% 1400%;
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    -o-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+	padding: 0;
+	margin: 0;
+	height: 3px;
+	border-bottom: 1px solid #000
+}
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
@@ -78,205 +89,140 @@ body {
 	padding: .3em
 }
 
-
-.center {
-	margin-left: auto;
-    margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
+span {
+	color: #f97b7b;
 }
 
-@media screen and (max-width: 800px) {
-	.bar {
-		background: linear-gradient(90deg, #ff4949, #ffb47c, #ffdd7c, #f9ff7c, #ffd17c, #ffc07c, #fe4e4e);
-		background-size: 1400% 1400%;
-		-webkit-animation: AnimationName 15s ease infinite;
-		-moz-animation: AnimationName 15s ease infinite;
-		-o-animation: AnimationName 15s ease infinite;
-		animation: AnimationName 15s ease infinite;
-		padding: 0;
-		margin: 0;
-		height: 3px;
-		border-bottom: 1px solid #000;
-		position: relative;
-		
-	}
-	.leftCol {
-		position: relative;
-		
-		margin: 0px;
-		padding: 3px;
-		width: 100vw;
-		height: 20vh;
-		background: #1d1d1d;
-		box-shadow:
-  			1.4px 1.9px 2.1px rgba(0, 0, 0, 0.025),
-  			3px 3.9px 4.7px rgba(0, 0, 0, 0.037),
-  			4.8px 6.3px 7.9px rgba(0, 0, 0, 0.046),
-  			7.1px 9.4px 12px rgba(0, 0, 0, 0.053),
-  			10.4px 13.8px 17.3px rgba(0, 0, 0, 0.06),
-  			17px 22.5px 24.5px rgba(0, 0, 0, 0.067),
-  			26.3px 34.8px 34.7px rgba(0, 0, 0, 0.074),
-  			33.1px 43.8px 50.4px rgba(0, 0, 0, 0.083),
-  			38.4px 50.9px 77.6px rgba(0, 0, 0, 0.095),
-  			43px 57px 138px rgba(0, 0, 0, 0.12);
-	}
-	.profile {
-		display: table;
-		box-shadow:
-			1.6px 1.6px 1.7px -4px rgba(0, 0, 0, 0.015),
-			3.4px 3.4px 3.8px -4px rgba(0, 0, 0, 0.022),
-			5.8px 5.8px 6.4px -4px rgba(0, 0, 0, 0.027),
-			8.7px 8.7px 9.7px -4px rgba(0, 0, 0, 0.031),
-			12.5px 12.5px 14px -4px rgba(0, 0, 0, 0.035),
-			17.7px 17.7px 19.8px -4px rgba(0, 0, 0, 0.039),
-			25.1px 25.1px 28.1px -4px rgba(0, 0, 0, 0.043),
-			36.5px 36.5px 40.9px -4px rgba(0, 0, 0, 0.048),
-			56.3px 56.3px 63px -4px rgba(0, 0, 0, 0.055),
-			100px 100px 112px -4px rgba(0, 0, 0, 0.07);
-		border-radius: 24px;
-		background: #2c2c2c;
-		margin: 1.5vh auto;
-		width: 90vw;
-		height: 17vh;
-		
-	}
-
-	.pfp {
-		display: table-cell;
-    	vertical-align: middle;
-		Width: 15vh; object-fit: contain;
-		margin: 1vh 1vh;
-		border-radius: 50%;
-		box-shadow:
-			0px 0.5px 0.6px -10px rgba(0, 0, 0, 0.013),
-			0px 1px 1.3px -10px rgba(0, 0, 0, 0.019),
-			0px 1.7px 2.1px -10px rgba(0, 0, 0, 0.023),
-			0px 2.6px 3.2px -10px rgba(0, 0, 0, 0.027),
-			0px 3.8px 4.6px -10px rgba(0, 0, 0, 0.03),
-			0px 5.3px 6.6px -10px rgba(0, 0, 0, 0.033),
-			0px 7.5px 9.3px -10px rgba(0, 0, 0, 0.037),
-			0px 11px 13.5px -10px rgba(0, 0, 0, 0.041),
-			0px 16.9px 20.8px -10px rgba(0, 0, 0, 0.047),
-			0px 30px 37px -10px rgba(0, 0, 0, 0.06);
-	}
-	.profileImage {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	.pfptext {
-		display: inline-block;
-    	vertical-align: middle;
-		width: 90vw;
-		color: #fff;
-	}
-	.nameText {
-		margin: 0;
-		font-weight: bold;
-		font-size: larger;
-	}
-	.titleText {
-		margin: 0;
-		font-weight: lighter;
-		font-size: small;
-	}
+#what h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #eee;
+	height: auto;
+	max-height: 120px
 }
-
-@media screen and (min-width: 801px) {
-
-	.bar {
-  		background: linear-gradient(90deg, #ff4949, #ffb47c, #ffdd7c, #f9ff7c, #ffd17c, #ffc07c, #fe4e4e);
-    	background-size: 1400% 1400%;
-    	-webkit-animation: AnimationName 15s ease infinite;
-    	-moz-animation: AnimationName 15s ease infinite;
-		-o-animation: AnimationName 15s ease infinite;
-		animation: AnimationName 15s ease infinite;
-		padding: 0;
-		margin: 0;
-		height: 3px;
-		border-bottom: 1px solid #000
-	}
-	
-	.leftCol {
-		position: fixed;
-		width: 20vw;
-		height: 100vh;
-		background: #1d1d1d;
-		font-size: 0.65em;
-	
-		box-shadow:
-			  1.4px 1.9px 2.1px rgba(0, 0, 0, 0.025),
-			  3px 3.9px 4.7px rgba(0, 0, 0, 0.037),
-			  4.8px 6.3px 7.9px rgba(0, 0, 0, 0.046),
-			  7.1px 9.4px 12px rgba(0, 0, 0, 0.053),
-			  10.4px 13.8px 17.3px rgba(0, 0, 0, 0.06),
-			  17px 22.5px 24.5px rgba(0, 0, 0, 0.067),
-			  26.3px 34.8px 34.7px rgba(0, 0, 0, 0.074),
-			  33.1px 43.8px 50.4px rgba(0, 0, 0, 0.083),
-			  38.4px 50.9px 77.6px rgba(0, 0, 0, 0.095),
-			  43px 57px 138px rgba(0, 0, 0, 0.12);
-	}
-	
-	.profile {
-		box-shadow:
-	  1.6px 1.6px 1.7px -4px rgba(0, 0, 0, 0.015),
-	  3.4px 3.4px 3.8px -4px rgba(0, 0, 0, 0.022),
-	  5.8px 5.8px 6.4px -4px rgba(0, 0, 0, 0.027),
-	  8.7px 8.7px 9.7px -4px rgba(0, 0, 0, 0.031),
-	  12.5px 12.5px 14px -4px rgba(0, 0, 0, 0.035),
-	  17.7px 17.7px 19.8px -4px rgba(0, 0, 0, 0.039),
-	  25.1px 25.1px 28.1px -4px rgba(0, 0, 0, 0.043),
-	  36.5px 36.5px 40.9px -4px rgba(0, 0, 0, 0.048),
-	  56.3px 56.3px 63px -4px rgba(0, 0, 0, 0.055),
-	  100px 100px 112px -4px rgba(0, 0, 0, 0.07);
-		margin: auto;
-		border-radius: 24px;
-		background: #2c2c2c;
-		margin: 15px 15px auto;
-		padding-left: 15px;
-		display: inline-block;
-		position: relative;
-	  }
-
-	  .pfp {
-		display: table-cell;
-    	vertical-align: middle;
-		Width: 15vh; object-fit: contain;
-		margin: 1vh 1vh;
-		border-radius: 50%;
-		object-fit: cover;
-		box-shadow:
-			0px 0.5px 0.6px -10px rgba(0, 0, 0, 0.013),
-			0px 1px 1.3px -10px rgba(0, 0, 0, 0.019),
-			0px 1.7px 2.1px -10px rgba(0, 0, 0, 0.023),
-			0px 2.6px 3.2px -10px rgba(0, 0, 0, 0.027),
-			0px 3.8px 4.6px -10px rgba(0, 0, 0, 0.03),
-			0px 5.3px 6.6px -10px rgba(0, 0, 0, 0.033),
-			0px 7.5px 9.3px -10px rgba(0, 0, 0, 0.037),
-			0px 11px 13.5px -10px rgba(0, 0, 0, 0.041),
-			0px 16.9px 20.8px -10px rgba(0, 0, 0, 0.047),
-			0px 30px 37px -10px rgba(0, 0, 0, 0.06);
-	}
-	
-	  .profileImage {
-		display: table-cell;
-    	vertical-align: middle;
-	}
-	.pfptext {
-		display: table-cell;
-    	vertical-align: middle;
-		width: 90vw;
-
-		color: #fff;
-	}
-	.nameText {
-		margin: 0;
-		font-weight: bold;
-		font-size: larger;
-	}
-	.titleText {
-		margin: 0;
-		font-weight: lighter;
-		font-size: small;
-	}
+#why h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #eee;
+	height: auto;
+	max-height: 120px
+}
+#where h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #eee;
+	height: auto;
+	max-height: 120px
+}
+#what p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
+}
+#why p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
+}
+#where p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
+}
+#spanhack span {
+	color: gray;
+	font-size: 10pt;
+}
+#where {
+	padding-bottom: 50px;
+}
+.box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: auto;
+ }
+ .item1 {
+	width: 500px;
+	height: 300px;
+	background-image: url(/static/img/cyphware.png);
+	background-size: cover;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f97b7b;
+	margin: 10px auto;
+	border-radius: 20px;
+ }
+ .item2 {
+	width: 500px;
+	height: 300px;
+	background-image: url(/static/img/cyph.pw.png);
+	background-size: cover;	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f97b7b;
+	margin: 10px auto;
+	border-radius: 20px;
+ }
+ 
+ #cyphware h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 90px;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #f97b7b;
+	height: auto;
+	max-height: 120px
+}
+#cyphpw h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #f97b7b;
+	height: auto;
+	max-height: 120px
+}
+#cyphware p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
+}
+#cyphpw p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
 }
