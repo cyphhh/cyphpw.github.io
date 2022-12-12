@@ -94,7 +94,7 @@ body {
 	list-style: none;
 	list-style-type: none;
 	text-align: center;
-	visibility: hidden
+	padding-bottom: 50px;
 }
 
 #container ul li {
@@ -123,3 +123,147 @@ body {
 	border: none;
   }
   
+#portfolio {
+	opacity: 1;
+	position: relative;
+	float: inherit;
+	transition: opacity 0.3s ease-in-out;
+}
+#portfolio.fade {
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+#what h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #eee;
+	height: auto;
+	max-height: 120px
+}
+#why h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #eee;
+	height: auto;
+	max-height: 120px
+}
+#where h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #eee;
+	height: auto;
+	max-height: 120px
+}
+#what p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
+}
+#why p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
+}
+#where p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
+}
+#spanhack span {
+	color: gray;
+	font-size: 10pt;
+}
+#where {
+	padding-bottom: 50px;
+}
+.box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: auto;
+ }
+ .item1 {
+	width: 500px;
+	height: 300px;
+	background-image: url(/static/img/cyphware.png);
+	background-size: cover;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f97b7b;
+	margin: 10px auto;
+	border-radius: 20px;
+ }
+ .item2 {
+	width: 500px;
+	height: 300px;
+	background-image: url(/static/img/cyph.pw.png);
+	background-size: cover;	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f97b7b;
+	margin: 10px auto;
+	border-radius: 20px;
+ }
+ 
+ #cyphware h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 90px;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #f97b7b;
+	height: auto;
+	max-height: 120px
+}
+#cyphpw h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 25pt;
+	font-weight: normal;
+	color: #f97b7b;
+	height: auto;
+	max-height: 120px
+}
+#cyphware p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
+}
+#cyphpw p {
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20pt;
+	padding: 50px;
+}
